@@ -10,3 +10,12 @@ Juniour front-end developer with a passion for learning
 - **E-MAIL:** [kateshakurina@gmail.com](mailto:kateshakurina@gmail.com)
 - **GIT-HUB:** [ShEP-JS](https://github.com/ShEP-JS)
 - **CITY:** Białystok, Poland
+
+## Tech Skills
+
+- HTML
+- CSS/SASS/SCSS
+- JavaScript (basic level)
+- Bootstrap
+- Figma
+- Git
