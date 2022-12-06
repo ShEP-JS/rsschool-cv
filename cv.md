@@ -44,3 +44,21 @@ function findAverage(array) {
   }
 }
 ```
+
+## Experience
+
+- Udemy study progect - [PULS](https://shep-js.github.io/project_puls/dist/)
+- Udemy study progect - [UBER](https://shep-js.github.io/udemy_ub_project/)
+- Study progect - [RENT CAR](https://shep-js.github.io/cars-hw/#cars)
+
+## Education
+
+- [WEB-developer 2022](https://www.udemy.com/course/webdeveloper/)
+- Online-intensive "Frontend start"
+
+## Languages
+
+- **English:** B1(Intermediate)
+- **Polish:** B1(Intermediate)
+- **Russian:** Native speaker
+- **Belarusian** Native speaker
