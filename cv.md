@@ -19,3 +19,28 @@ Juniour front-end developer with a passion for learning
 - Bootstrap
 - Figma
 - Git
+
+## Code Examples
+
+- Square Every Digit
+
+```
+function squareDigits(num){
+  let arr= num.toString().split('');
+  let newNumberArr= arr.map(item => (+item)**2);
+  return +newNumberArr.join('');
+}
+```
+
+- Calculate average
+
+```
+function findAverage(array) {
+  let value= array.reduce((sum,item) => sum+item, 0);
+  if (value <=0) {
+    return 0;
+  } else {
+  return value/array.length;
+  }
+}
+```
