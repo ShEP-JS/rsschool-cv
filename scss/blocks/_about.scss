@@ -1,0 +1,32 @@
+.about {
+  padding-top: 105px;
+  background-color: #fffafa;
+  .divider {
+    margin-left: 0;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 305px 765px;
+    column-gap: 70px;
+  }
+  img {
+    width: 100%;
+  }
+  &__title {
+    position: relative;
+    @include circleLight;
+    z-index: 0;
+    line-height: 24px;
+  }
+  .title_fz36 {
+    width: 424px;
+    line-height: 60px;
+  }
+  &__date {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    width: 570px;
+  }
+}
