@@ -44,6 +44,12 @@
       column-gap: 20px;
     }
   }
+  .skills {
+    &__rate {
+      grid-template-columns: repeat(2, 350px);
+      grid-template-rows: repeat(3, 70px);
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -62,6 +68,34 @@
     }
     &__item-head {
       font-size: 14px;
+    }
+  }
+  .skills {
+    &__tech {
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: repeat(2, 150px);
+    }
+    &__tech_item {
+      &:nth-child(4) {
+        img {
+          width: 25%;
+        }
+      }
+      &:nth-child(5) {
+        padding-top: 30px;
+        img {
+          width: 80%;
+        }
+      }
+      img {
+        width: 35%;
+      }
+    }
+    &__rate {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-template-rows: repeat(3, 70px);
     }
   }
 }
@@ -142,6 +176,25 @@
     }
     &__item-text {
       font-size: 10px;
+    }
+  }
+  .skills {
+    &__tech {
+      grid-template-columns: repeat(3, 150px);
+      grid-template-rows: repeat(3, 150px);
+      margin-top: 30px;
+    }
+    &__rate {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      grid-template-rows: repeat(3, 70px);
+    }
+    &__scale_base {
+      height: 10px;
+    }
+    &__scale_red {
+      height: 10px;
     }
   }
 }
@@ -236,6 +289,55 @@
     &__item-text {
       font-size: 10px;
       line-height: 16px;
+    }
+  }
+  .skills {
+    .resume__subtitle {
+      font-size: 24px;
+      line-height: 57px;
+    }
+    .divider {
+      margin: 14px auto;
+    }
+    &__tech {
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+      margin-top: 30px;
+    }
+    &__tech_item {
+      &:nth-child(5) {
+        padding-top: 15px;
+        img {
+          width: 80%;
+        }
+      }
+    }
+    &__tech_name {
+      margin-bottom: 0px;
+      font-size: 8px;
+    }
+    &__rate {
+      margin-top: 35px;
+      display: grid;
+      grid-template-columns: repeat(1, 200px);
+      grid-template-rows: repeat(6, 40px);
+    }
+    &__title {
+      font-size: 12px;
+      &::before {
+        width: 26px;
+        height: 26px;
+        top: -2px;
+      }
+    }
+    &__scale {
+      margin-top: 14px;
+    }
+    &__scale_base {
+      height: 8px;
+    }
+    &__scale_red {
+      height: 8px;
     }
   }
 }
