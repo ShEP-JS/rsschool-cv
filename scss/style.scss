@@ -2,7 +2,12 @@
 @import "base/variables";
 @import "base/mixins";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -10,6 +15,8 @@ body {
 * {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -21,3 +28,5 @@ body {
 @import "blocks/title";
 @import "blocks/btn";
 @import "blocks/about";
+
+@import "blocks/media";

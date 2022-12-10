@@ -5,10 +5,10 @@
     border-radius: 100%;
     width: 36px;
     height: 36px;
-    background: $main-color;
-    z-index: -1;
     top: -25%;
     right: 165px;
+    z-index: -1;
+    background: $main-color;
   }
 }
 @mixin circleLight {
@@ -18,9 +18,9 @@
     border-radius: 100%;
     width: 36px;
     height: 36px;
-    background: #b22222;
     z-index: -1;
     top: -25%;
     left: -10px;
+    background: #b22222;
   }
 }
