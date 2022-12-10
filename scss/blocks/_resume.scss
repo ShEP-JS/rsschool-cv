@@ -1,0 +1,108 @@
+.resume {
+  padding-top: 105px;
+  background-color: #fffafa;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include circleLight;
+    &:before {
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    z-index: 2;
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  .divider {
+    margin: 25px auto;
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+  }
+  &__wrapper {
+    display: grid;
+    padding-left: 135px;
+    padding-top: 60px;
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 50px;
+    place-content: center;
+  }
+  &__column-title {
+    display: flex;
+    z-index: 1;
+  }
+  &__column-icon {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      border-radius: 100%;
+      width: 36px;
+      height: 36px;
+      background: #b22222;
+      z-index: 0;
+      left: -20px;
+      top: -13px;
+    }
+    img {
+      position: relative;
+      margin-right: 30px;
+      z-index: 10;
+    }
+  }
+  &__column {
+    ul {
+      list-style: none;
+      margin-left: 20px;
+      li {
+        position: relative;
+        &::after {
+          content: "";
+          width: 1px;
+          height: 100%;
+          position: absolute;
+          top: -10px;
+          left: -23px;
+          background-color: black;
+        }
+      }
+    }
+  }
+  &__item {
+    padding-left: 40px;
+    padding-top: 45px;
+  }
+  &__item-head {
+    a {
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: #b22222;
+      top: 48px;
+      left: 16px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 38px;
+      height: 1px;
+      background-color: black;
+      top: 55px;
+      left: -22px;
+    }
+  }
+  &__item-text {
+    color: #696969;
+  }
+}
