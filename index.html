@@ -344,6 +344,39 @@
           </div>
         </div>
       </section>
+
+      <section class="code">
+        <div class="container">
+          <div class="title title_fz16 resume__title">CODE</div>
+          <h2 class="title title_fz36 resume__subtitle">Examples</h2>
+          <div class="divider"></div>
+          <div class="code__examples">
+            <div class="code__example">
+              <div class="code__title title title_fz16 ">Square Every Digit</div>
+              <pre>
+                <code>function squareDigits(num){
+                  let arr= num.toString().split('');
+                  let newNumberArr= arr.map(item => (+item)**2);
+                  return +newNumberArr.join('');
+                }</code>
+              </pre>
+            </div>
+            <div class="code__example">
+              <div class="code__title title title_fz16">Calculate average</div>
+              <pre>
+                <code>function findAverage(array) {
+                  let value= array.reduce((sum,item) => sum+item, 0);
+                  if (value <=0) {
+                    return 0;
+                  } else {
+                  return value/array.length;
+                  }
+                }</code>
+              </pre>
+            </div>
+          </div>
+        </section>
+        
     </main>
     <footer class="footer"></footer>
 
