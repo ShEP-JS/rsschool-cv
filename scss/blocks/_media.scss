@@ -261,6 +261,11 @@
       font-size: 8px;
     }
   }
+  .footer {
+    &__wrapper {
+      padding: 15px 10px 15px 10px;
+    }
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -420,6 +425,11 @@
       margin-top: 0;
       padding-top: 15px;
       font-size: 7px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      padding: 15px 10px 15px 10px;
     }
   }
 }
