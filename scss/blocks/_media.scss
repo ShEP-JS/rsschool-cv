@@ -1,0 +1,435 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .header {
+    &__list {
+      width: 100%;
+    }
+    .nav {
+      width: 80%;
+    }
+  }
+  .about {
+    padding-top: 70px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 200px 400px;
+      column-gap: 50px;
+      place-content: center;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &__title {
+      position: relative;
+      @include circleLight;
+      z-index: 0;
+      line-height: 24px;
+    }
+    .title_fz36 {
+      width: 424px;
+      line-height: 60px;
+    }
+    &__text {
+      width: 424px;
+    }
+  }
+  .resume {
+    width: 100%;
+    &__wrapper {
+      padding-left: 50px;
+      column-gap: 20px;
+    }
+  }
+  .skills {
+    &__rate {
+      grid-template-columns: repeat(2, 350px);
+      grid-template-rows: repeat(3, 70px);
+    }
+  }
+  .portfolio {
+    padding-top: 105px;
+    background-color: #fffafa;
+    &__wrapper {
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: repeat(2, 200px);
+    }
+  }
+  .code {
+    pre {
+      width: 100%;
+      max-height: 100%;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .resume {
+    width: 100%;
+    &__wrapper {
+      display: grid;
+      padding-top: 60px;
+      grid-template-columns: repeat(3, 200px);
+    }
+    &__item {
+      padding-top: 30px;
+    }
+    &__item-head {
+      font-size: 14px;
+    }
+  }
+  .skills {
+    &__tech {
+      grid-template-columns: repeat(4, 150px);
+      grid-template-rows: repeat(2, 150px);
+    }
+    &__tech_item {
+      &:nth-child(4) {
+        img {
+          width: 25%;
+        }
+      }
+      &:nth-child(5) {
+        padding-top: 30px;
+        img {
+          width: 80%;
+        }
+      }
+      img {
+        width: 35%;
+      }
+    }
+    &__rate {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 300px);
+      grid-template-rows: repeat(3, 70px);
+    }
+  }
+  .portfolio {
+    padding-top: 105px;
+    background-color: #fffafa;
+    &__wrapper {
+      grid-template-columns: repeat(4, 170px);
+      grid-template-rows: repeat(2, 170px);
+    }
+  }
+  .code {
+    pre {
+      width: 100%;
+      max-height: 100%;
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .header {
+    &__list {
+      width: 100%;
+
+      padding-top: 14px;
+    }
+    &__link {
+      font-size: 12px;
+    }
+    .nav {
+      width: 80%;
+    }
+  }
+  .about {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: 200px 200px;
+      column-gap: 30px;
+    }
+
+    &__title {
+      position: relative;
+      @include circleLight;
+      z-index: 0;
+      line-height: 24px;
+    }
+    .title_fz36 {
+      font-size: 17px;
+      width: 200px;
+      line-height: 26px;
+    }
+    &__date {
+      font-size: 14px;
+    }
+    &__text {
+      width: 200px;
+    }
+  }
+  .resume {
+    width: 100%;
+    &__wrapper {
+      padding-top: 20px;
+      padding-left: 0;
+      grid-template-columns: repeat(3, 150px);
+    }
+    &__column-title {
+      font-size: 17px;
+    }
+    &__item {
+      padding-left: 12px;
+      padding-top: 15px;
+    }
+    &__column-icon {
+      img {
+        margin-right: 10px;
+      }
+    }
+    &__item-head {
+      font-size: 12px;
+      &::before {
+        content: "";
+        top: 19px;
+        left: -5px;
+      }
+      &::after {
+        content: "";
+        width: 17px;
+        top: 26px;
+      }
+    }
+    &__item-text {
+      font-size: 10px;
+    }
+  }
+  .skills {
+    &__tech {
+      grid-template-columns: repeat(3, 150px);
+      grid-template-rows: repeat(3, 150px);
+      margin-top: 30px;
+    }
+    &__rate {
+      margin-top: 80px;
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+      grid-template-rows: repeat(3, 70px);
+    }
+    &__scale_base {
+      height: 10px;
+    }
+    &__scale_red {
+      height: 10px;
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(3, 250px);
+      :nth-child(3),
+      :nth-child(5) {
+        display: none;
+      }
+      :nth-child(2) {
+        grid-column-start: 1;
+        grid-row: 2/3;
+      }
+    }
+    #uber {
+      grid-column-start: 2;
+      grid-row: 1/3;
+    }
+    #puls {
+      grid-column: 1/3;
+    }
+  }
+  .code {
+    &__examples {
+      grid-template-columns: 0.8fr;
+      grid-template-rows: minmax(140, 250px) minmax(140, 250px);
+      gap: 20px;
+    }
+    pre {
+      margin-top: 0;
+    }
+    code {
+      font-size: 8px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      padding: 15px 10px 15px 10px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .header {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      padding-top: 5px;
+      padding-left: 20px;
+    }
+    &__link {
+      margin-right: 15px;
+      a {
+        font-size: 12px;
+      }
+    }
+    .nav {
+      width: 300px;
+    }
+  }
+  .about {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: 250px;
+      grid-template-rows: 200px 300px;
+      column-gap: 30px;
+      row-gap: 30px;
+    }
+    .divider {
+      margin: 0 auto;
+    }
+    img {
+      object-fit: contain;
+    }
+    &__title {
+      position: relative;
+      @include circleLight;
+      z-index: 0;
+      line-height: 24px;
+    }
+    .title_fz36 {
+      font-size: 17px;
+      width: 200px;
+      line-height: 20px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+    &__date {
+      font-size: 14px;
+    }
+    &__text {
+      width: 200px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  .resume {
+    width: 100%;
+    &__wrapper {
+      padding-top: 0;
+      grid-template-columns: 200px;
+      grid-template-rows: repeat(3, 150px);
+      row-gap: 30px;
+    }
+    &__item {
+      padding-left: 40px;
+      padding-top: 0;
+    }
+    &__item-head {
+      font-size: 12px;
+      line-height: 20px;
+      &::before {
+        content: "";
+        width: 12px;
+        height: 12px;
+        top: 4px;
+        left: 20px;
+      }
+      &::after {
+        content: "";
+        width: 42px;
+        top: 10px;
+      }
+    }
+    &__item-text {
+      font-size: 10px;
+      line-height: 16px;
+    }
+  }
+  .skills {
+    .resume__subtitle {
+      font-size: 24px;
+      line-height: 57px;
+    }
+    .divider {
+      margin: 14px auto;
+    }
+    &__tech {
+      grid-template-columns: repeat(3, 80px);
+      grid-template-rows: repeat(3, 80px);
+      margin-top: 30px;
+    }
+    &__tech_item {
+      &:nth-child(5) {
+        padding-top: 15px;
+        img {
+          width: 80%;
+        }
+      }
+    }
+    &__tech_name {
+      margin-bottom: 0px;
+      font-size: 8px;
+    }
+    &__rate {
+      margin-top: 35px;
+      display: grid;
+      grid-template-columns: repeat(1, 200px);
+      grid-template-rows: repeat(6, 40px);
+    }
+    &__title {
+      font-size: 12px;
+      &::before {
+        width: 26px;
+        height: 26px;
+        top: -2px;
+      }
+    }
+    &__scale {
+      margin-top: 14px;
+    }
+    &__scale_base {
+      height: 8px;
+    }
+    &__scale_red {
+      height: 8px;
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(2, 140px);
+      grid-template-rows: repeat(3, 140px);
+    }
+  }
+  .code {
+    &__examples {
+      grid-template-columns: 0.8fr;
+      grid-template-rows: minmax(140, 250px) minmax(140, 250px);
+      gap: 20px;
+    }
+    pre {
+      margin-top: 0;
+      padding-top: 15px;
+      font-size: 7px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      padding: 15px 10px 15px 10px;
+    }
+  }
+}

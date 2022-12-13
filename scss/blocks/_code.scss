@@ -1,0 +1,32 @@
+.code {
+  padding-top: 105px;
+  background-color: #fffafa;
+  height: auto;
+  &__examples {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max(1fr);
+    gap: 20px;
+    place-content: center;
+  }
+  &__title {
+    margin-left: 50px;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      background-color: #b22222;
+      top: 4px;
+      left: -25px;
+    }
+  }
+  pre {
+    display: block;
+    padding-top: 35px;
+    margin-top: 20px;
+    background-color: #dbd6d6;
+  }
+}
