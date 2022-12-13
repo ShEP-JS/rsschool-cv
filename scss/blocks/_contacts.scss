@@ -1,0 +1,51 @@
+.contacts {
+  padding: 105px 0 70px 0;
+  background-color: #fffafa;
+  margin: 0 auto;
+  .divider {
+    margin-left: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__descr {
+    margin-right: 50px;
+  }
+  &__title {
+    position: relative;
+    @include circleLight;
+    z-index: 0;
+    line-height: 24px;
+  }
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  &__list {
+    list-style-type: none;
+    margin-left: 20px;
+    li {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #b22222;
+        top: 6px;
+        left: -25px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

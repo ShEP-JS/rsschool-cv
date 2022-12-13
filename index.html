@@ -1,19 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="icon" href="assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header>
-      <nav></nav>
+    <header class="header">
+      <div class="header__hamburger">
+        <span></span>
+        <span class="long"></span>
+        <span></span>
+      </div>
+      <div class="header__block">
+        <div class="header__close">
+          <svg
+            width="23"
+            height="25"
+            viewBox="0 0 29 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17.1568 14.5231L28.4489 3.23075C29.1837 2.49623 29.1837 1.30861 28.4489 0.574085C27.7144 -0.160437 26.5267 -0.160437 25.7922 0.574085L14.4998 11.8665L3.20781 0.574085C2.47295 -0.160437 1.28567 -0.160437 0.551149 0.574085C-0.183716 1.30861 -0.183716 2.49623 0.551149 3.23075L11.8432 14.5231L0.551149 25.8155C-0.183716 26.55 -0.183716 27.7376 0.551149 28.4721C0.917206 28.8385 1.39852 29.0226 1.87948 29.0226C2.36045 29.0226 2.84141 28.8385 3.20781 28.4721L14.4998 17.1798L25.7922 28.4721C26.1586 28.8385 26.6396 29.0226 27.1205 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="nav">
+          <ul class="header__list">
+            <li class="header__link"><a href="#about">About me</a></li>
+            <li class="header__link"><a href="#experience">Experience</a></li>
+            <li class="header__link"><a href="#skills">Skills</a></li>
+            <li class="header__link"><a href="#projects">Projects</a></li>
+            <li class="header__link"><a href="#languages">Languages</a></li>
+            <li class="header__link"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <img src="assets/images/cvphoto.JPG" alt="Katesphoto">
+
+    <main class="main">
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__wrapper">
+            <img
+              src="assets/images/cvphoto.JPG"
+              alt="my_photo"
+              class="about__photo"
+            />
+            <div class="about__descr">
+              <div class="title title_fz16 about__title">ABOUT ME</div>
+              <h1 class="title title_fz36">My name is Katsiaryna Shakuryna</h1>
+              <div class="divider"></div>
+              <div class="title title_fz16 about__date">
+                DATE OF BIRTH: 04.10.1989 (33 y.o.)
+              </div>
+              <div class="title title_fz14 about__text">
+                I'm an enthusiastic and detail-oriented Frontend Software
+                Engineer seeking an entry-level position with Company to use my
+                skills in frontend.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume">
+        <div class="container">
+          <div class="title title_fz16 resume__title" id="experience">
+            EXPERIENCE
+          </div>
+          <h2 class="title title_fz36 resume__subtitle" id="languages">
+            My qualifications
+          </h2>
+          <div class="divider"></div>
+
+          <div class="resume__wrapper">
+            <div class="resume__column">
+              <div class="title title_fz20 resume__column-title">
+                <div class="resume__column-icon">
+                  <img src="assets/icons/University.svg" alt="Education" />
+                </div>
+                <div class="resume__column-text">Education</div>
+              </div>
+              <ul>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      Online-intensive “Frontend start”
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      september 2022
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      <a href="https://www.udemy.com/course/webdeveloper/"
+                        >WEB-developer 2022</a
+                      >
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      october-november 2022
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume__column">
+              <div class="title title_fz20 resume__column-title">
+                <div class="resume__column-icon">
+                  <img src="assets/icons/Developer.svg" alt="expeience" />
+                </div>
+                <div class="resume__column-text">Experience</div>
+              </div>
+              <ul>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      <a href="https://shep-js.github.io/project_puls/dist/"
+                        >PULS</a
+                      >
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      Udemy study progect
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      <a href="https://shep-js.github.io/udemy_ub_project/"
+                        >UBER</a
+                      >
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      Udemy study progect
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      <a href="https://shep-js.github.io/cars-hw/#cars"
+                        >RENT CAR</a
+                      >
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      Study progect
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="resume__column">
+              <div class="title title_fz20 resume__column-title">
+                <div class="resume__column-icon">
+                  <img src="assets/icons/Courses.svg" alt="Education" />
+                </div>
+                <div class="resume__column-text">Languages</div>
+              </div>
+              <ul>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      English
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      B1 (Intermediate)
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">Polish</div>
+                    <div class="resume__item-text title title_fz14">
+                      B1 (Intermediate)
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="resume__item">
+                    <div class="resume__item-head title title_fz16">
+                      Rusian, Belorusian
+                    </div>
+                    <div class="resume__item-text title title_fz14">
+                      native speaker
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="title title_fz16 resume__title">SKILLS</div>
+          <h2 class="title title_fz36 resume__subtitle">
+            What I use in my work
+          </h2>
+          <div class="divider"></div>
+          <div class="skills__tech">
+            <div class="skills__tech_item">
+              <img src="assets/icons/html5.svg" alt="html" />
+              <div class="skills__tech_name title title_fz14">HTML5</div>
+            </div>
+            <div class="skills__tech_item">
+              <img src="assets/icons/css3.svg" alt="css" />
+              <div class="skills__tech_name title title_fz14">
+                CSS3/SASS/SCSS
+              </div>
+            </div>
+            <div class="skills__tech_item">
+              <img src="assets/icons/JS.svg" alt="js" />
+              <div class="skills__tech_name title title_fz14">JavaScript</div>
+            </div>
+            <div class="skills__tech_item">
+              <img src="assets/icons/Figma-logo.svg" alt="figma" />
+              <div class="skills__tech_name title title_fz14">Figma</div>
+            </div>
+            <div class="skills__tech_item">
+              <img src="assets/icons/Jquery.svg" alt="jquery" />
+              <div class="skills__tech_name title title_fz14">Jquery</div>
+            </div>
+            <div class="skills__tech_item">
+              <img src="assets/icons/Bootstrap_logo.svg" alt="bootstrap" />
+              <div class="skills__tech_name title title_fz14">Bootstrap</div>
+            </div>
+            <div class="skills__tech_item">
+              <img src="assets/icons/github.png" alt="git" />
+              <div class="skills__tech_name title title_fz14">GitHub</div>
+            </div>
+          </div>
+          <ul class="skills__rate">
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Web-site creation</div>
+                  <div class="skills__procent">90%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Communicability</div>
+                  <div class="skills__procent">100%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Responsibility</div>
+                  <div class="skills__procent">100%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Creativity</div>
+                  <div class="skills__procent">90%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Design creation</div>
+                  <div class="skills__procent">75%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Motivation</div>
+                  <div class="skills__procent">95%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <div class="container">
+          <div class="title title_fz16 resume__title">PORTFOLIO</div>
+          <h2 class="title title_fz36 resume__subtitle" id="projects">
+            My projects
+          </h2>
+          <div class="divider"></div>
+          <div class="portfolio__wrapper">
+            <a
+              href="https://shep-js.github.io/project_puls/dist/"
+              class="portfolio__item"
+              ><img src="assets/images/puls1.png" alt="puls1"
+            /></a>
+            <a
+              href="https://shep-js.github.io/project_puls/dist/"
+              class="portfolio__item"
+              ><img src="assets/images/puls3.png" alt="puls3"
+            /></a>
+            <a
+              href="https://shep-js.github.io/udemy_ub_project/"
+              class="portfolio__item"
+              ><img src="assets/images/uber2.png" alt="uber2"
+            /></a>
+            <a
+              href="https://shep-js.github.io/udemy_ub_project/"
+              class="portfolio__item"
+              id="uber"
+              ><img src="assets/images/uber1.png" alt="uber1"
+            /></a>
+            <a
+              href="https://shep-js.github.io/cars-hw/#cars"
+              class="portfolio__item"
+              ><img src="assets/images/rent1.png" alt="rent1"
+            /></a>
+            <a
+              href="https://shep-js.github.io/project_puls/dist/"
+              class="portfolio__item"
+              id="puls"
+              ><img src="assets/images/pusl2.png" alt="puls2"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="code">
+        <div class="container">
+          <div class="title title_fz16 resume__title">CODE</div>
+          <h2 class="title title_fz36 resume__subtitle">Examples</h2>
+          <div class="divider"></div>
+          <div class="code__examples">
+            <div class="code__example">
+              <div class="code__title title title_fz16">Square Every Digit</div>
+              <pre>
+                <code>function squareDigits(num){
+                  let arr= num.toString().split('');
+                  let newNumberArr= arr.map(item => (+item)**2);
+                  return +newNumberArr.join('');
+                }</code>
+              </pre>
+            </div>
+            <div class="code__example">
+              <div class="code__title title title_fz16">Calculate average</div>
+              <pre>
+                <code>function findAverage(array) {
+                  let value= array.reduce((sum,item) => sum+item, 0);
+                  if (value &lt;=0) {
+                    return 0;
+                  } else {
+                  return value/array.length;
+                  }
+                }</code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__wrapper">
+            <div class="contacts__descr">
+              <div class="title title_fz16 contacts__title">CONTACTS</div>
+              <h2 class="title title_fz20">Contact me</h2>
+              <div class="divider"></div>
+            </div>
+            <div class="contacts__date">
+              <div class="title title_fz16 contacts__text">
+                In any convenient way:
+              </div>
+              <ul class="title title_fz14 contacts__list">
+                <li><a href="tel:+48572010559">PHONE: +48572010559</a></li>
+                <li>
+                  <a href="mailto:kateshakurina@gmail.com"
+                    >E-MAIL: kateshakurina@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/ShEP-JS">GIT-HUB: ShEP-JS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__git">
+            <a href="https://github.com/ShEP-JS"
+              ><img class="imgGIT" src="assets/icons/github.png" alt="github"
+            /></a>
+          </div>
+          <div class="footer__year">2022</div>
+          <div class="footer__rs-school">
+            <a href="https://rs.school/js/"
+              ><img src="assets/images/rs_school_js.svg" alt="rs_school"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" class="pageup"
+      ><img src="assets/icons/circle-chevron-up-solid.svg" alt="up"
+    /></a>
+
+    <script src="index.js"></script>
   </body>
 </html>
