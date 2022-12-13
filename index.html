@@ -35,11 +35,11 @@
         <nav class="nav">
           <ul class="header__list">
             <li class="header__link"><a href="#about">About me</a></li>
-            <li class="header__link"><a href="#">Experience</a></li>
-            <li class="header__link"><a href="#">Skills</a></li>
-            <li class="header__link"><a href="#">Projects</a></li>
-            <li class="header__link"><a href="#">Languages</a></li>
-            <li class="header__link"><a href="#">Contacts</a></li>
+            <li class="header__link"><a href="#experience">Experience</a></li>
+            <li class="header__link"><a href="#skills">Skills</a></li>
+            <li class="header__link"><a href="#projects">Projects</a></li>
+            <li class="header__link"><a href="#languages">Languages</a></li>
+            <li class="header__link"><a href="#contacts">Contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -53,7 +53,6 @@
               src="assets/images/cvphoto.JPG"
               alt="my_photo"
               class="about__photo"
-              id="about"
             />
             <div class="about__descr">
               <div class="title title_fz16 about__title">ABOUT ME</div>
@@ -74,8 +73,12 @@
 
       <section class="resume">
         <div class="container">
-          <div class="title title_fz16 resume__title">EXPERIENCE</div>
-          <h2 class="title title_fz36 resume__subtitle">My qualifications</h2>
+          <div class="title title_fz16 resume__title" id="experience">
+            EXPERIENCE
+          </div>
+          <h2 class="title title_fz36 resume__subtitle" id="languages">
+            My qualifications
+          </h2>
           <div class="divider"></div>
 
           <div class="resume__wrapper">
@@ -199,7 +202,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <div class="title title_fz16 resume__title">SKILLS</div>
           <h2 class="title title_fz36 resume__subtitle">
@@ -238,75 +241,89 @@
               <div class="skills__tech_name title title_fz14">GitHub</div>
             </div>
           </div>
-          <div class="skills__rate">
-            <div class="skills__item">
-              <div class="skills__title title title_fz14">
-                <div class="skills__descr">Web-site creation</div>
-                <div class="skills__procent">90%</div>
+          <ul class="skills__rate">
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Web-site creation</div>
+                  <div class="skills__procent">90%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
               </div>
-              <div class="skills__scale">
-                <div class="skills__scale_base"></div>
-                <div class="skills__scale_red"></div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Communicability</div>
+                  <div class="skills__procent">100%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
               </div>
-            </div>
-            <div class="skills__item">
-              <div class="skills__title title title_fz14">
-                <div class="skills__descr">Communicability</div>
-                <div class="skills__procent">100%</div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Responsibility</div>
+                  <div class="skills__procent">100%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
               </div>
-              <div class="skills__scale">
-                <div class="skills__scale_base"></div>
-                <div class="skills__scale_red"></div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Creativity</div>
+                  <div class="skills__procent">90%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
               </div>
-            </div>
-            <div class="skills__item">
-              <div class="skills__title title title_fz14">
-                <div class="skills__descr">Responsibility</div>
-                <div class="skills__procent">100%</div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Design creation</div>
+                  <div class="skills__procent">75%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
               </div>
-              <div class="skills__scale">
-                <div class="skills__scale_base"></div>
-                <div class="skills__scale_red"></div>
+            </li>
+            <li>
+              <div class="skills__item">
+                <div class="skills__title title title_fz14">
+                  <div class="skills__descr">Motivation</div>
+                  <div class="skills__procent">95%</div>
+                </div>
+                <div class="skills__scale">
+                  <div class="skills__scale_base"></div>
+                  <div class="skills__scale_red"></div>
+                </div>
               </div>
-            </div>
-            <div class="skills__item">
-              <div class="skills__title title title_fz14">
-                <div class="skills__descr">Creativity</div>
-                <div class="skills__procent">90%</div>
-              </div>
-              <div class="skills__scale">
-                <div class="skills__scale_base"></div>
-                <div class="skills__scale_red"></div>
-              </div>
-            </div>
-            <div class="skills__item">
-              <div class="skills__title title title_fz14">
-                <div class="skills__descr">Design creation</div>
-                <div class="skills__procent">75%</div>
-              </div>
-              <div class="skills__scale">
-                <div class="skills__scale_base"></div>
-                <div class="skills__scale_red"></div>
-              </div>
-            </div>
-            <div class="skills__item">
-              <div class="skills__title title title_fz14">
-                <div class="skills__descr">Motivation</div>
-                <div class="skills__procent">95%</div>
-              </div>
-              <div class="skills__scale">
-                <div class="skills__scale_base"></div>
-                <div class="skills__scale_red"></div>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
       <section class="portfolio">
         <div class="container">
           <div class="title title_fz16 resume__title">PORTFOLIO</div>
-          <h2 class="title title_fz36 resume__subtitle">My projects</h2>
+          <h2 class="title title_fz36 resume__subtitle" id="projects">
+            My projects
+          </h2>
           <div class="divider"></div>
           <div class="portfolio__wrapper">
             <a
@@ -352,7 +369,7 @@
           <div class="divider"></div>
           <div class="code__examples">
             <div class="code__example">
-              <div class="code__title title title_fz16 ">Square Every Digit</div>
+              <div class="code__title title title_fz16">Square Every Digit</div>
               <pre>
                 <code>function squareDigits(num){
                   let arr= num.toString().split('');
@@ -366,7 +383,7 @@
               <pre>
                 <code>function findAverage(array) {
                   let value= array.reduce((sum,item) => sum+item, 0);
-                  if (value <=0) {
+                  if (value &lt;=0) {
                     return 0;
                   } else {
                   return value/array.length;
@@ -375,42 +392,60 @@
               </pre>
             </div>
           </div>
+        </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__wrapper">
             <div class="contacts__descr">
               <div class="title title_fz16 contacts__title">CONTACTS</div>
-              <h2 class="title title_fz20">Contact with me</h2>
+              <h2 class="title title_fz20">Contact me</h2>
               <div class="divider"></div>
-              
             </div>
             <div class="contacts__date">
               <div class="title title_fz16 contacts__text">
-                With any convenient way:
+                In any convenient way:
               </div>
               <ul class="title title_fz14 contacts__list">
-                <li> <a href="tel:+48572010559">PHONE: +48572010559</a> </li>
-                <li> <a href="mailto:kateshakurina@gmail.com">E-MAIL: kateshakurina@gmail.com</a></li>
-                <li> <a href="https://github.com/ShEP-JS">GIT-HUB: ShEP-JS</a></li>                    
-              </ul>  
-            </div>              
+                <li><a href="tel:+48572010559">PHONE: +48572010559</a></li>
+                <li>
+                  <a href="mailto:kateshakurina@gmail.com"
+                    >E-MAIL: kateshakurina@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/ShEP-JS">GIT-HUB: ShEP-JS</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>              
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__git "><a href="https://github.com/ShEP-JS"><img class="imgGIT" src="assets/icons/github.png" alt="github"></a></div>
+          <div class="footer__git">
+            <a href="https://github.com/ShEP-JS"
+              ><img class="imgGIT" src="assets/icons/github.png" alt="github"
+            /></a>
+          </div>
           <div class="footer__year">2022</div>
-          <div class="footer__rs-school"><a href="https://rs.school/js/"><img src="assets/images/rs_school_js.svg" alt="rs_school"></a></div>
+          <div class="footer__rs-school">
+            <a href="https://rs.school/js/"
+              ><img src="assets/images/rs_school_js.svg" alt="rs_school"
+            /></a>
+          </div>
         </div>
-      </div>  
+      </div>
     </footer>
 
-  <script type="text/javascript" src="index.js"></script>
+    <a href="#" class="pageup"
+      ><img src="assets/icons/circle-chevron-up-solid.svg" alt="up"
+    /></a>
+
+    <script src="index.js"></script>
   </body>
 </html>

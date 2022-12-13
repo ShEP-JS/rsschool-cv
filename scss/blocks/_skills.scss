@@ -37,6 +37,7 @@
     margin-bottom: 25px;
   }
   &__rate {
+    list-style-type: none;
     margin-top: 120px;
     display: grid;
     grid-template-columns: repeat(3, 350px);
